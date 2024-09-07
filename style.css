@@ -1,0 +1,148 @@
+/* spinner CSS */
+
+/* body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.loader {
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid #3498db;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+} */
+
+
+
+/* Random text printing for loading */
+
+/* body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+.loading-container {
+    text-align: center;
+}
+
+.loading-text {
+    font-size: 24px;
+    font-weight: bold;
+    color: #3498db;
+    white-space: nowrap;
+} */
+
+
+
+/* random char generator */
+/* body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+.loading-container {
+    text-align: center;
+    display: flex;
+}
+
+.loading-text {
+    font-size: 48px;
+    font-weight: bold;
+    color: #3498db;
+} */
+
+
+/* working */
+
+/* body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+.loading {
+    font-size: 48px;
+    font-weight: bold;
+    color: #000000;
+} */
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #333;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 2rem;
+    overflow: hidden; /* Prevent scrollbars from appearing */
+}
+
+.loading {
+    display: flex;
+    gap: 10px;
+    position: relative; /* For character alignment */
+}
+
+.loading {
+    display: flex;
+    gap: 10px;
+    position: relative; /* For character alignment */
+    font-size: 5rem; /* Larger initial font size for better scaling */
+}
+
+.char {
+    display: inline-block;
+    opacity: 0;
+    transition: opacity 0.5s ease-out; /* Smooth fade-out transition */
+    will-change: transform, opacity; /* Optimize for smoother animations */
+}
+
+.zoom-in {
+    animation: zoomIn 2s forwards; /* Apply zoom-in animation */
+    text-align: center; /* Center text within container */
+    white-space: nowrap; /* Prevent text wrapping */
+}
+
+@keyframes zoomIn {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(20); /* Adjust scale factor to prevent pixelation */
+        opacity: 0; /* Fade out */
+    }
+}
